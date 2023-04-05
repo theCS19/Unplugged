@@ -314,6 +314,11 @@ input[type=button] {
   flex-flow: row wrap;
 }
 
+.features i {
+	font-size: 3.75em;
+    margin-bottom: 40px;
+}
+
 .features p {
   text-align: center;
   margin: 0;
@@ -567,6 +572,11 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews article figure,
   .reviews article div {
     width: 50%;
   }
@@ -637,8 +647,26 @@ input[type=button] {
 @media only screen and (min-width: 1200px) {
   /*Desktop styles here*/
 
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+    font-size: 1.875em;
+  }
+
+  p {
+    font-size: 1.125em;
+    line-height: 1.333;
   }
 
   /*Hero*/
@@ -669,8 +697,16 @@ input[type=button] {
 
   /*Reviews*/
 
+  .reviews h2 {
+    padding-bottom: 50px; 
+  }
+
   .reviews article div {
     width: 40%;
+  }
+  
+  footer h4 {
+    font-size: 1.875em;
   }
 
   /*----About Page----*/
