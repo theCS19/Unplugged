@@ -103,6 +103,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -112,8 +114,9 @@ a {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.875em;
   font-weight: 500;
+  font-size: 1.875em;
+  margin: 0;
 }
 
 h3,
@@ -169,10 +172,18 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
   background: #3a3a3a;
-  width: 100%;
   height: 1px;
+  width: 100%;
   margin: 10px 0 20px 0;
 }
 
@@ -184,6 +195,7 @@ header nav {
   width: 60%;
   font-size: 1.125em;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -215,6 +227,14 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #527158;
+}
+
+footer .social-icons p i {
+  font-size: 1.3125em;
 }
 
 footer .content-wrapper {
@@ -290,7 +310,7 @@ input[type=button] {
 /*----Features----*/
 
 .features {
-  background: url(../img/unplugged-retreat-features.jpg);
+  background: url('../img/unplugged-retreat-features.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -510,6 +530,16 @@ input[type=button] {
     margin: 100px 0;
   }
 
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
+
   /*Header*/
 
   header {
@@ -520,6 +550,10 @@ input[type=button] {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -535,6 +569,16 @@ input[type=button] {
   }
 
   /*Hero*/
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /*Aside*/
 
@@ -553,6 +597,10 @@ input[type=button] {
 
   /*Features*/
 
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -562,7 +610,11 @@ input[type=button] {
   }
 
   .features .features-item-description {
-    width: 50%;
+    width: 62%;
+  }
+
+  .features i {
+    margin-bottom: 30px;
   }
 
   /*Reviews*/
@@ -578,7 +630,12 @@ input[type=button] {
 
   .reviews article figure,
   .reviews article div {
-    width: 50%;
+    width: 49%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
   }
 
   /*Footer*/
@@ -588,14 +645,29 @@ input[type=button] {
     margin: 100px 0;
   }
 
-  .footer-content {
+  footer .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -629,6 +701,10 @@ input[type=button] {
     align-items: flex-start;
   }
 
+  .contact-content h4 {
+    font-size: 1.5em;
+  }
+
   /*----FAQ Page----*/
 
   .faq .content-wrapper {
@@ -641,6 +717,12 @@ input[type=button] {
 
   .faq h2 {
     width: 100%;
+  }
+
+  .faq h4,
+  .faq p {
+    font-size: .875em;
+    line-height: 1.125;
   }
 }
 
@@ -672,7 +754,8 @@ input[type=button] {
   /*Hero*/
 
   .hero-area h1 {
-    width: 60%;
+    font-size: 3.75em;
+    width: 80%;
   }
 
   /*Aside*/
@@ -683,6 +766,10 @@ input[type=button] {
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
     width: 30%;
+  }
+
+  .form-description p {
+    font-size: 1.125em;
   }
 
   /*Features*/
@@ -718,6 +805,7 @@ input[type=button] {
   .mission h2,
   .contact-section .content-wrapper h2 {
     width: 95%;
+    font-size: 3em;
   }
 
   .contact-content h4 {
@@ -728,8 +816,14 @@ input[type=button] {
 
   .faq h2 {
     width: 100%;
+    font-size: 3em;
   }
 
+  .faq h4,
+  .faq p {
+    font-size: 1.125em;
+    line-height: 1;
+  }
 }
 
 /* ==========================================================================
